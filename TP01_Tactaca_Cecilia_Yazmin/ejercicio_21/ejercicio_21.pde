@@ -1,10 +1,10 @@
 PVector puntoA, puntoB, puntoC, puntoD;
-int distLinea;
+int anchoEscalon;
 
 public void setup (){
   size(500,500);
-   distLinea=60;
-  puntoA = new PVector(0,distLinea);
+  anchoEscalon=60;
+  puntoA = new PVector(0,anchoEscalon);
  
   while(puntoA.y <= height){
   escalon();
@@ -16,9 +16,9 @@ public void setup (){
 public void escalon(){
   stroke(#4CE3FC);
   strokeWeight(4);
-  puntoB = new PVector(puntoA.x+distLinea, puntoA.y);
+  puntoB = new PVector(puntoA.x+anchoEscalon, puntoA.y);
   line(puntoA.x, puntoA.y,puntoB.x,puntoB.y);
-  puntoC = new PVector(puntoB.x,puntoB.y+distLinea);
+  puntoC = new PVector(puntoB.x,puntoB.y+anchoEscalon);
   line(puntoB.x,puntoB.y,puntoC.x,puntoC.y);
 }
 
