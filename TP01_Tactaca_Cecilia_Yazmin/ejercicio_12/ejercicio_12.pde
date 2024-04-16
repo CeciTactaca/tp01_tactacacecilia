@@ -8,12 +8,15 @@ void setup(){
 }
 
 void draw(){
+  background(255);
   text(saludo,200,200);
-  textSize(30);
+  textSize(24);
+  fill(0);
+  textAlign(CENTER,CENTER);
 }
+
 void keyPressed(){
-  nombre+=key;
-  
+  nombre +=key;
   if(key == '\n'){
     saludo="Hola, " + nombre ;
     println(saludo);
