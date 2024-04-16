@@ -1,4 +1,4 @@
-String texto="Escreibe tu nombre";
+String texto="Escribe tu nombre";
 String nombre="";
 String saludo="";
 
@@ -12,10 +12,10 @@ void draw(){
   textSize(30);
 }
 void keyPressed(){
-  nombre += key;
+  nombre+=key;
   
   if(key == '\n'){
-    saludo="Hola, " + nombre;
+    saludo="Hola, " + nombre ;
     println(saludo);
   }
 }
