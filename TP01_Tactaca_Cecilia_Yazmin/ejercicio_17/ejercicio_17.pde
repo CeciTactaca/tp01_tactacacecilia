@@ -7,6 +7,8 @@ float xTesoro, yTesoro;
 void setup(){
   size(500,500);
   rectMode(CENTER);
+  xTesoro=width/2;
+  yTesoro=height/2;
   
  }
 
@@ -16,7 +18,7 @@ void draw(){
   rect(xTesoro,yTesoro,tesoro,tesoro);
   fill(#4EFF1A);
   ellipse(mouseX,mouseY,link,link);
-  distancia=sqrt(pow((xLink-width/2),2) + pow((yLink-height/2),2));
+  distancia=sqrt(pow((xLink-xTesoro),2) + pow((yLink-yTesoro),2));
   println(distancia);
   if (distancia<100){
    textSize(32);
